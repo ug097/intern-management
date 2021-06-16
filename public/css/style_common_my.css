@@ -1,0 +1,899 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+  box-sizing: border-box;
+}
+html{
+  width:100% !important;
+}
+.n-aikuIT header,body,footer {
+  font-family: "游ゴシック",YuGothic,sans-serif;
+  text-align:center;
+  margin:0;
+  padding:0;
+  color: #343434;
+}
+
+body {
+  background: #E7FAFE;
+  background: #F1FDFF;
+  
+}
+
+a {
+  text-decoration:none;
+  color: #242424;
+
+}
+.n-aikuIT p{
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+.n-aikuIT .font-small{
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.tomei:hover {
+  opacity: 0.7 ;
+  transition: 0.3s;
+}
+
+.n-aikuIT  .con-title{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT  .con-title a{
+  font-size: 15px;
+  color: #327DEA;
+}
+.n-aikuIT  .con-title a:hover{
+  text-decoration: underline;
+}
+
+/* ------------------- ヘッダー ------------------- */
+
+
+.n-aikuIT header {
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  box-shadow: 0 2px 6px rgba(0,0,0,.16);
+  font-size: 16px;
+}
+.n-aikuIT .header-content{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px;
+}
+.n-aikuIT .pc-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+	width: 100%;
+}
+.n-aikuIT .pc-menu .menu01 {
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT .pc-menu .menu02 {
+  padding: 0px 0;
+  display: flex;
+}
+.n-aikuIT .head-btn{
+  margin: 10px 20px 5px 20px;
+}
+.n-aikuIT header img {
+  transition: all 0.3s;
+  margin-right: 30px;
+}
+.n-aikuIT header img:hover {
+  opacity: 0.7;
+}
+.n-aikuIT header a:hover {
+  text-decoration: underline;
+}
+.n-aikuIT header .kigyo{
+  padding: 0 0 0 25px;
+  background: url("../images/my/top/building-blue.png") no-repeat top left;
+}
+.n-aikuIT header .kyujin{
+  padding: 0 0 0 25px;
+  background: url("../images/my/top/human-blue.png") no-repeat top left;
+}
+.n-aikuIT header .star{
+  padding: 0 0 0 30px;
+  background: url("../images/my/top/n-aiku_icon.png") no-repeat top left;
+}
+.n-aikuIT header .mail{
+  padding: 0 0 0 25px;
+  background: url("../images/my/top/contact_icon.png") no-repeat top left;
+}
+.n-aikuIT header .saiyo{
+  padding: 0 0 0 27px;
+  background: url("../images/my/top/bag-blue-m.png") no-repeat top left;
+}
+
+.n-aikuIT header .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  font-weight: 600;
+  padding: 0px 0;
+  border-radius: 5px;
+  margin: 1px 0px 1px 10px;
+  transition: 0.3s;
+}
+.n-aikuIT header .btn img{
+  margin-right: 7px;
+  height:13px
+}
+.n-aikuIT header .btn:hover{
+  text-decoration: none;
+}
+
+.n-aikuIT header .toroku-btn{
+  background-color: #327DEA;
+  color: white;
+}
+.n-aikuIT header .btn p{
+  font-size: 0.8em;
+}
+
+.n-aikuIT header .login-btn{
+  background-color: white;
+  color: #327DEA;
+  border: 1px solid;
+  border-color: #327DEA;
+}
+
+
+
+
+/* ------------------- ナビゲーションメニュー ------------------- */
+
+.n-aikuIT .pc-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT .toggle-menu{
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .n-aikuIT .pc-menu{
+    display:none;
+  }
+  .n-aikuIT .toggle-menu{
+    display:block;
+  }
+  .n-aikuIT header {
+    height: 80px;
+  }
+  .n-aikuIT .toggle-menu .header-logo img{
+    max-height:35px;
+  }
+}
+
+@media (max-width: 560px) {
+  .n-aikuIT header {
+    height: 60px;
+  }
+  .n-aikuIT .toggle-menu .header-logo img{
+    max-height:25px;
+  }
+}
+
+.n-aikuIT #mainmenu{
+  display: none;
+}
+.n-aikuIT .mainmenu {
+  margin-bottom: 5px;
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  z-index: -100000;
+  text-align: left;
+}
+@media (max-width: 1440px) {
+  .n-aikuIT .mainmenu {
+    top: 80px;
+  }
+}
+@media (max-width: 550px) {
+  .n-aikuIT .mainmenu {
+    top: 60px;
+  }
+}
+
+.n-aikuIT .mainmenu ul	{
+  margin: 0;
+  list-style: none;
+  background-color: white;
+  height:100vh
+}
+.n-aikuIT .mainmenu .btn-area{
+  background-color: #E7FAFE;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #D8D8D8;
+  box-shadow: 0 2px 10px -9px rgba(0,0,0,1) inset;
+  text-align: center;
+  padding: 25px 3%;
+}
+.n-aikuIT .mainmenu .btn-area a{
+  width: 46%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.n-aikuIT .mainmenu .btn-area .toroku-btn02{
+ background-color: #327DEA;
+ color: white;
+ font-weight: bold;
+ padding: 10px 0;
+ border-radius: 5px;
+ margin-right: 4%;
+}
+.n-aikuIT .mainmenu .btn-area .toroku-btn02 img{
+  width: 12px;
+  height: 13px;
+  margin-right: 10px;
+}
+.n-aikuIT .mainmenu .btn-area .login-btn02{
+  background-color: white;
+  color: #327DEA;
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #327DEA;
+ }
+ .n-aikuIT .mainmenu .btn-area .login-btn02 img{
+  width: 10px;
+  height: 13px;
+  margin-right: 10px;
+}
+.n-aikuIT .mainmenu .btn-area-my{
+  background-color: #E7FAFE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #D8D8D8;
+  box-shadow: 0 2px 10px -9px rgba(0,0,0,1) inset;
+  text-align: center;
+  padding: 25px 3%;
+}
+.n-aikuIT .mainmenu .btn-area-my .name-area{
+  font-weight: bold;
+  color: #327DEA;
+  text-align: left;
+}
+.n-aikuIT .mainmenu .btn-area-my .name-area p{
+  line-height: 1.5;
+}
+.n-aikuIT .mainmenu .btn-area-my .name-area .name{
+  font-size: 22px;
+}
+.n-aikuIT .mainmenu .btn-area-my a:hover{
+  text-decoration: none;
+}
+.n-aikuIT .mainmenu .btn-area-my .login-btn02{
+  background-color: white;
+  color: #327DEA;
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #327DEA;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .n-aikuIT .mainmenu .btn-area-my .login-btn02 img{
+  width: 13px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.n-aikuIT .mainmenu li {
+  border-bottom: solid 1px #D8D8D8;
+  padding-left: 3%;
+}
+.n-aikuIT .mainmenu li a{
+  display: block;
+  color: #263238;
+  font-size: 18px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.n-aikuIT .mainmenu li a img{
+  width: 18px;
+  height: 18px;
+  margin-right: 3%;
+}
+.n-aikuIT .mainmenu li a div{
+  display: flex;
+  margin-right: 3%;
+  justify-content: right;
+  align-items: center;
+}
+.n-aikuIT .mainmenu li a div p{
+  margin-right: 15px;
+}
+.n-aikuIT .mainmenu li a div img{
+  margin-right: 0;
+}
+.n-aikuIT .mainmenu .btn-area a:hover,.n-aikuIT .mainmenu li a:hover	{
+  text-decoration: none;
+}
+.n-aikuIT header .mainmenu .toggle-kigyo{
+  padding: 25px 0 25px 30px;
+  background: url("../images/my/top/building-blue.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-kyujin{
+  padding: 25px 0 25px 30px;
+  background: url("../images/my/top/human-blue.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-star{
+  padding: 25px 0 25px 35px;
+  background: url("../images/my/top/n-aiku_icon.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-mail{
+  padding: 25px 0 25px 30px;
+  background: url("../images/my/top/contact_icon.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-saiyo{
+  padding: 25px 0 25px 30px;
+  background: url("../images/my/top/bag-blue-m.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-kininaru{
+  padding: 25px 0 25px 35px;
+  background: url("../images/my/top/star-blue-m.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-message{
+  padding: 25px 0 25px 35px;
+  background: url("../images/my/top/letter-blue-m.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-offer{
+  padding: 25px 0 25px 35px;
+  background: url("../images/my/top/message-blue-m.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-rireki{
+  padding: 25px 0 25px 35px;
+  background: url("../images/my/top/clock-blue-m.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .toggle-profile{
+  padding: 25px 0 25px 35px;
+  background: url("../images/my/top/pen-blue-m.png") no-repeat center left;
+}
+.n-aikuIT header .mainmenu .new-icon{
+  font-size: 15px;
+  color: #F05A3D;
+ }
+
+/* トグルボタン */
+
+.n-aikuIT #navbtn	{
+  position: absolute;
+  top: 20px;
+  border: none;
+  background-color: white;
+  right: 20px;
+  width: 35px;/* クリックしやすいようにちゃんと幅を指定する */
+  height: 40px;/* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+}
+.n-aikuIT #navbtn:focus	{
+  outline: none
+}
+.n-aikuIT #navbtn span	{
+  display: inline-block;
+  text-indent: -9999px}
+
+.n-aikuIT .hamburger__line {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #327DEA;
+  transition: all .6s;
+}
+.n-aikuIT .hamburger__line--1 {
+  top: 8px;
+  right:0px;
+}
+.n-aikuIT .hamburger__line--2 {
+  top: 18px;
+  right:0px;
+}
+.n-aikuIT .hamburger__line--3 {
+  top: 28px;
+  right:0px;
+}
+
+@media (max-width: 550px) {
+  .n-aikuIT #navbtn	{
+    top: 10px;
+  }  
+  .n-aikuIT .hamburger__line {
+    width: 30px;
+  }
+}
+
+
+/* ------------------- 2カラム分け------------------- */
+
+.n-aikuIT .main-box{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.n-aikuIT .left-box{
+  width: 260px;
+  padding: 140px 0 60px 0;
+}
+
+.n-aikuIT .right-box{
+  width: 900px;
+  padding: 140px 0 0 0;
+}
+
+.n-aikuIT .center-box{
+  width:100%;
+  padding:0px 0 0 0;
+}
+
+
+/* ------------------- マイページ関連 ------------------- */
+
+
+.n-aikuIT .sp-my-header-menu{
+  display: none;
+}
+
+@media (max-width: 1440px){
+.n-aikuIT header {
+    z-index: 20;
+    box-shadow:none;
+}
+.n-aikuIT .sp-my-header-menu{
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 80px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,.16);
+}
+.n-aikuIT .sp-my-header-menu ul{
+  display: flex;
+  font-size: 12px;
+  border-top: 1px solid #E4ECFB;
+}
+.n-aikuIT .sp-my-header-menu ul li img{
+ margin: 0 auto 5px auto;
+}
+.n-aikuIT .sp-my-header-menu ul  a{
+  color: #327DEA;
+  padding: 15px 0 10px 0;
+  width: 20%;
+  position: relative;
+}
+.n-aikuIT .sp-my-header-menu ul  a:not(:last-child) {
+  border-right: 1px solid #E4ECFB;
+}
+.n-aikuIT .sp-my-header-menu ul a.check{
+  background-color:#E7FAFE;
+}
+.n-aikuIT .sp-my-header-menu ul a li{
+  width: 100%;
+}
+.n-aikuIT .sp-my-header-menu .new-badge{
+  border-radius: 20px;
+  background-color: #FF0000;
+  color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  position: absolute;
+  top: 5px;
+  left: 51%;
+}
+
+
+}
+@media (max-width: 550px) {
+  .n-aikuIT .sp-my-header-menu{
+    top: 60px;
+  }
+}
+
+
+@media (max-width: 1440px){
+  .n-aikuIT .my{
+     width: 94%;
+  }
+  .n-aikuIT .my .left-box{
+    display: none;
+  }
+  .n-aikuIT .my .right-box{
+    width: 100%;
+    padding:120px 0 0 0;
+  }
+}
+
+/* ------------------- マイページ右カラム ------------------- */
+.n-aikuIT .my .right-box{
+background-color:white;
+filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+margin: 120px 0 50px 0;
+padding: 40px;
+}
+
+@media (max-width: 1440px){
+.n-aikuIT .my .right-box{
+  margin: 200px 0 50px 0;
+  }
+}
+
+@media (max-width: 700px){
+  .n-aikuIT .my .right-box{
+    padding: 30px;
+  }
+}
+@media (max-width: 560px){
+  .n-aikuIT .my .right-box{
+    margin: 160px 0 30px 0;
+    padding: 20px;
+    }
+}
+
+.n-aikuIT .right-box .my-title{
+  display: flex;
+  align-items: center;
+}
+.n-aikuIT .right-box .my-title h2{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.n-aikuIT .right-box .new-area{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.n-aikuIT .right-box .new-area p{
+  padding: 50px 30px;
+  background-color: #E4ECFB;
+  font-weight: bold;
+  width: 25%;
+}
+.n-aikuIT .right-box .new-area ul{
+  padding-left: 30px;
+}
+.n-aikuIT .right-box .new-area ul li{
+  padding: 10px 0;
+  font-weight: bold;
+  color: #F05A3D;
+}
+.n-aikuIT .right-box .new-area ul li a{
+  text-decoration: underline;
+  color: #F05A3D;
+}
+.n-aikuIT .right-box .new-area ul li a:hover{
+  text-decoration: none;
+}
+
+@media (max-width: 560px){
+  .n-aikuIT .right-box .new-area{
+    display: block;
+  }
+  .n-aikuIT .right-box .new-area p{
+    padding: 10px 20px;
+    width: 100%;
+    border-bottom: 1px solid #D8D8D8;
+  }
+  .n-aikuIT .right-box .new-area ul{
+    padding: 20px;
+  }
+  }
+
+
+/* ------------------- タグ ------------------- */
+.n-aikuIT .tag{
+  display: flex;
+  font-weight: 600;
+  font-size: 11px;
+  color: white;
+}
+.n-aikuIT .tag .tag-blue{
+  background-color: #1EBDD3;
+  padding: 5px;
+  margin-right: 5px;
+}
+.n-aikuIT .tag .tag-red{
+  background-color: #F05A3D;
+  padding: 5px;
+  margin-right: 5px;
+}
+.n-aikuIT .tag .tag-purple{
+  background-color: #976CCF;
+  padding: 5px;
+  margin-right: 5px;
+}
+.n-aikuIT .tag .tag-green{
+  background-color: #8AD242;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+
+/* ------------------- ページネーション ------------------- */
+
+
+.n-aikuIT .right-box .index h1{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #327DEA;
+}
+.n-aikuIT .right-box .index p{
+  font-size: 1em;
+}
+.n-aikuIT .right-box .index span{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #F05A3D;
+}
+.n-aikuIT .right-box .pagenation{
+  width: 100%;
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT .right-box .pagenation .pages{
+  display: flex;
+}
+.n-aikuIT .right-box .pagenation .pages a{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0px 6px;
+}
+.n-aikuIT .right-box .pagenation .pages .arrow{
+  background: #327DEA;
+}
+.n-aikuIT .right-box .pagenation .pages .disabled{
+  background: #D8D8D8;
+}
+.n-aikuIT .right-box .pagenation .pages .page-select{
+  background: white;
+  border: solid #D8D8D8 1px;
+}
+
+
+
+
+/* ------------------- マイページ左カラム ------------------- */
+.n-aikuIT .my .left-box{
+  margin: 120px 0 0 0;
+  padding-top: 0;
+}
+
+.n-aikuIT .left-box .my-menu{
+  background-color: white;
+  width: 260px;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+  position: sticky;
+  top: 120px;
+  border-radius: 8px;
+  text-align: left;
+}
+.n-aikuIT .left-box .my-menu .name-area{
+  background-color: #327DEA;
+  color: white;
+  font-weight: bold;
+  padding: 20px 25px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.n-aikuIT .left-box .my-menu .name-area p{
+  line-height: 1.5;
+}
+.n-aikuIT .left-box .my-menu .name-area .name-icon{
+  margin-right: 10px;
+  width: 25px;
+}
+.n-aikuIT .left-box .my-menu .name-area .name{
+  font-size:19px;
+}
+.n-aikuIT .left-box .my-menu .name-area img{
+  width: 100%;
+}
+.n-aikuIT .left-box .my-menu ul{
+  padding: 20px 25px;
+}
+.n-aikuIT .left-box .my-menu ul li img{
+ width: 8%;
+}
+
+.n-aikuIT .left-box .my-menu ul li a{
+  font-size: 15px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.n-aikuIT .left-box .my-menu ul li .new-icon{
+  font-size: 15px;
+  color: #F05A3D;
+  position: absolute;
+  right: 0;
+ }
+ .n-aikuIT .left-box .my-menu ul li a .blue{
+  display: none;
+}
+.n-aikuIT .left-box .my-menu ul li a:hover,.n-aikuIT .left-box .my-menu ul li .check{
+  font-weight: bold;
+  color: #327DEA;
+}
+.n-aikuIT .left-box .my-menu ul li a:hover .gray,.n-aikuIT .left-box .my-menu ul li .check .gray{
+  display: none;
+}
+.n-aikuIT .left-box .my-menu ul li a:hover .blue,.n-aikuIT .left-box .my-menu ul li .check .blue{
+  display: block;
+}
+.n-aikuIT .left-box .my-menu ul li a p{
+  margin-left: 10px;
+
+}
+
+
+
+/* ------------------- フッター ------------------- */
+
+.n-aikuIT footer{
+  background: #327DEA;
+  line-height: 1.3em;
+  color: white;
+  padding: 60px 0;
+}
+.n-aikuIT footer .footer-area{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.n-aikuIT footer .footer-area nav{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT footer .footer-area nav ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.n-aikuIT footer .footer-area nav ul li{
+  position: relative;
+}
+.n-aikuIT footer .footer-area nav ul li:not(:last-child){
+  margin-right:40px;
+  position: relative;
+}
+.n-aikuIT footer .footer-area nav ul li:not(:first-of-type)::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  content: '';
+}
+.n-aikuIT footer .footer-area nav ul li a{
+  color: white;
+  font-size: 15px;
+}
+.n-aikuIT footer .footer-area nav ul li a:hover{
+  text-decoration: underline;
+}
+.n-aikuIT footer .footer-area .copy{
+  font-size: 13px;
+  text-align: right;
+}
+
+
+@media (max-width: 1200px){
+  .n-aikuIT .main-box{
+     width: 94%;
+  }
+  .n-aikuIT .left-box{
+    width: 23%;
+  }
+  .n-aikuIT .right-box{
+    width: 75%;
+  }
+  .n-aikuIT .left-box .kensaku .cp_tab > label{
+    width: 48.5%;
+    padding: 4% 3%;
+  }
+  .n-aikuIT footer .footer-area{
+    width: 96%;
+  }
+  
+  
+}
+@media (max-width: 960px) {
+  .n-aikuIT .left-box{
+    display: none;
+  }
+  .n-aikuIT .right-box{
+    width: 100%;
+    padding:120px 0 0 0;
+  }
+
+  .n-aikuIT footer{
+    padding: 60px 0 20px 0;
+  }
+  .n-aikuIT footer .footer-area{
+    display: block;
+  }
+  .n-aikuIT footer .footer-area nav ul{
+    justify-content: center;
+  }
+  .n-aikuIT footer .footer-area nav{
+    justify-content: center;
+  }
+  .n-aikuIT footer .footer-area nav ul li{
+    margin-bottom: 20px;
+  }
+  .n-aikuIT footer .footer-area nav ul li a{
+    font-size: 13px;
+  }
+  .n-aikuIT footer .footer-area .copy{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 750px) {
+  .n-aikuIT footer .footer-area nav ul{
+    width: 280px;
+  }
+  .n-aikuIT footer .footer-area nav ul li:nth-child(3),.n-aikuIT footer .footer-area nav ul li:nth-child(4){
+    margin-right: 0;
+  }
+  .n-aikuIT footer .footer-area nav ul li:nth-child(4)::before,.n-aikuIT footer .footer-area nav ul li:nth-child(5)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .n-aikuIT .right-box{
+    padding:100px 0 0 0;
+  }
+  .n-aikuIT .right-box .kensaku-result .index{
+  display: block;
+  margin-bottom: 15px;
+  }
+  .n-aikuIT .right-box .kensaku-result .index h1{
+  margin-bottom: 10px;
+  } 
+}

@@ -1,0 +1,615 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+  width:100% !important;
+}
+.n-aikuIT header,body,footer {
+  font-family: "游ゴシック",YuGothic,sans-serif;
+  text-align:center;
+  margin:0;
+  padding:0;
+  color: #343434;
+}
+
+body {
+  background: #E7FAFE;
+  background: #F1FDFF;
+  
+}
+
+a {
+  text-decoration:none;
+  color: #242424;
+
+}
+.n-aikuIT p{
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+.n-aikuIT .font-small{
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.tomei:hover {
+  opacity: 0.7 ;
+  transition: 0.3s;
+}
+
+.n-aikuIT  .con-title{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT  .con-title a{
+  font-size: 15px;
+  color: #327DEA;
+}
+.n-aikuIT  .con-title a:hover{
+  text-decoration: underline;
+}
+
+/* ------------------- ヘッダー ------------------- */
+
+
+.n-aikuIT header {
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  box-shadow: 0 2px 6px rgba(0,0,0,.16);
+  font-size: 16px;
+}
+.n-aikuIT .header-content{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px;
+}
+.n-aikuIT .pc-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+	width: 100%;
+}
+.n-aikuIT .pc-menu .menu01 {
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT .pc-menu .menu02 {
+  padding: 0px 0;
+  display: flex;
+}
+.n-aikuIT .head-btn{
+  margin: 10px 20px 5px 20px;
+}
+.n-aikuIT header img {
+  transition: all 0.3s;
+  margin-right: 30px;
+}
+.n-aikuIT header img:hover {
+  opacity: 0.7;
+}
+.n-aikuIT header a:hover {
+  text-decoration: underline;
+}
+.n-aikuIT header .kigyo{
+  padding: 0 0 0 25px;
+  background: url("../images/pc/top/building-blue.png") no-repeat top left;
+}
+.n-aikuIT header .kyujin{
+  padding: 0 0 0 25px;
+  background: url("../images/pc/top/human-blue.png") no-repeat top left;
+}
+.n-aikuIT header .star{
+  padding: 0 0 0 30px;
+  background: url("../images/pc/top/n-aiku_icon.png") no-repeat top left;
+}
+.n-aikuIT header .mail{
+  padding: 0 0 0 25px;
+  background: url("../images/pc/top/contact_icon.png") no-repeat top left;
+}
+.n-aikuIT header .saiyo{
+  padding: 0 0 0 27px;
+  background: url("../images/pc/top/bag-blue-m.png") no-repeat top left;
+}
+
+.n-aikuIT header .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  font-weight: 600;
+  padding: 0px 0;
+  border-radius: 5px;
+  margin: 1px 0px 1px 10px;
+  transition: 0.3s;
+}
+.n-aikuIT header .btn img{
+  margin-right: 7px;
+  height:13px
+}
+.n-aikuIT header .btn:hover{
+  text-decoration: none;
+}
+
+.n-aikuIT header .toroku-btn{
+  background-color: #327DEA;
+  color: white;
+}
+.n-aikuIT header .btn p{
+  font-size: 0.8em;
+}
+
+.n-aikuIT header .login-btn{
+  background-color: white;
+  color: #327DEA;
+  border: 1px solid;
+  border-color: #327DEA;
+}
+
+
+
+
+/* ------------------- ナビゲーションメニュー ------------------- */
+
+.n-aikuIT .pc-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT .toggle-menu{
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .n-aikuIT .pc-menu{
+    display:none;
+  }
+  .n-aikuIT .toggle-menu{
+    display:block;
+  }
+  .n-aikuIT header {
+    height: 70px;
+  }
+  .n-aikuIT .toggle-menu .header-logo img{
+    max-height:35px;
+  }
+}
+
+.n-aikuIT #mainmenu{
+  display: none;
+}
+.n-aikuIT .mainmenu {
+  margin-bottom: 5px;
+  width: 100%;
+  position: fixed;
+  top: 70px;
+  z-index: 90;
+}
+.n-aikuIT .mainmenu ul	{
+  margin: 0;
+  padding: 5vh 5vw;
+  list-style: none;
+  background-color: white;
+  height:100vh
+}
+.n-aikuIT .mainmenu li a	{
+  display: block;
+  padding: 25px 5px;
+  color: #263238;
+  font-size: 18px;
+  font-weight: bold;
+}
+.n-aikuIT .mainmenu .menubtn a{
+  color: white;
+  background-color: #E8505B;
+  width: 300px;
+  margin: 20px auto 0 auto;
+  border-radius: 8px;
+}
+
+/* トグルボタン */
+
+.n-aikuIT #navbtn	{
+  position: absolute;
+  top: 15px;
+  border: none;
+  background-color: white;
+  right: 20px;
+  width: 35px;/* クリックしやすいようにちゃんと幅を指定する */
+  height: 40px;/* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+}
+.n-aikuIT #navbtn:focus	{
+  outline: none
+}
+.n-aikuIT #navbtn span	{
+  display: inline-block;
+  text-indent: -9999px}
+
+.n-aikuIT .hamburger__line {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #327DEA;
+  transition: all .6s;
+}
+.n-aikuIT .hamburger__line--1 {
+  top: 8px;
+  right:0px;
+}
+.n-aikuIT .hamburger__line--2 {
+  top: 18px;
+  right:0px;
+}
+.n-aikuIT .hamburger__line--3 {
+  top: 28px;
+  right:0px;
+}
+
+
+/* ------------------- １カラム------------------- */
+
+.n-aikuIT .main-box{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+	margin: 0 auto;
+}
+.n-aikuIT .center-box{
+	width:100%;
+	padding:0px 0 0 0;
+}
+
+
+/* ------------------- 2カラム分け------------------- */
+
+.n-aikuIT .main-box{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.n-aikuIT .left-box{
+  width: 260px;
+  padding: 140px 0 60px 0;
+}
+
+.n-aikuIT .right-box{
+  width: 900px;
+  padding: 140px 0 0 0;
+}
+
+.n-aikuIT .center-box{
+  width:100%;
+  padding:0px 0 0 0;
+}
+
+
+/* ------------------- 左カラム------------------- */
+
+.n-aikuIT .left-box .left-btn{
+  display: block;
+  background-color: #327DEA;
+  font-weight: bold;
+  color: white;
+  padding: 15px 0;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+}
+.n-aikuIT .left-box .left-btn:hover{
+  background-color: #1EBDD3;
+}
+.n-aikuIT .left-box .left-btn2{
+  display: block;
+  background-color: white;
+  font-weight: bold;
+  color: #327DEA;
+  padding: 14px 0;
+  border-radius: 5px;
+  border: 1px solid #327DEA;
+}
+.n-aikuIT .left-box .left-btn2:hover{
+  border: 1px solid #1EBDD3;
+  color: #1EBDD3;
+}
+
+
+
+/* ------------------- 検索------------------- */
+
+.cp_tab *, .cp_tab *:before, .cp_tab *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cp_tab {
+  margin: 1em auto;
+  text-align: left;
+}
+.cp_tab > input[type='radio'] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.cp_tab .cp_tabpanels {
+  position: relative;
+  min-height: 150px;/* エリアの高さ */
+}
+.cp_tab .cp_tabpanel {
+  position: absolute;
+  width: 100%;
+  display: none;
+  padding: 0.5em 1em;
+  transform: translateY(-10px);
+  -webkit-transition: 0s;
+  transition: opacity 0s;
+  border-radius: 0px 0px 12px 12px;
+}
+.cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child,
+.cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2),
+.cp_tab > input:nth-child(5):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(3),
+.cp_tab > input:nth-child(7):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(4),
+.cp_tab > input:nth-child(9):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(5),
+.cp_tab > input:nth-child(11):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(6) {
+  display: block;
+  transform: translateY(0px);
+}
+.cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child {
+  background: #327DEA;
+}
+.cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2) {
+  background: #1EBDD3;
+}
+.cp_tab > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 12px 12px 0 0;
+  font-weight: bold;
+  font-size:1.5em;
+  color: white;
+  width: 590px;
+  text-align: center;
+}
+.cp_tab > input:first-child + label {
+  background: #327DEA;
+  margin-right: 15.4px;
+}
+.cp_tab > input:nth-child(3) + label {
+  background: #1EBDD3;
+}
+
+.cp_tab > label:hover {
+}
+.cp_tab > input:focus + label {
+  color: #ffffff;
+}
+.cp_tab > input:checked + label {
+  margin-bottom: -1px;
+}
+
+.cp_ipselect {
+  overflow: hidden;
+  width: 390px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cp_ipselect select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+  display: none;
+}
+.cp_ipselect.cp_sl {
+  position: relative;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  background: #ffffff;
+}
+.cp_ipselect.cp_sl::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #888;
+  pointer-events: none;
+}
+.cp_ipselect.cp_sl select {
+  padding: 8px 38px 8px 8px;
+  color: #666666;
+}
+
+
+
+/* ------------------- 左カラム検索------------------- */
+
+.n-aikuIT .left-box .kensaku{
+  width: 100%;
+}
+.n-aikuIT .left-box .kensaku .cp_tab{
+  margin: 0 auto;
+}
+.n-aikuIT .left-box .kensaku .cp_tab > label{
+  width: 125px;
+  padding: 10px;
+  font-size: 1em;
+  border: solid #bbbbbb;
+  border-width:1px 1px 0px 1px;
+  border-radius: 7px 7px 0px 0px;
+}
+.n-aikuIT .left-box .kensaku .cp_tab > input:first-child + label{
+  margin-right: 5px;
+  background: white;
+  color: #327DEA;
+}
+.n-aikuIT .left-box .kensaku .cp_tab > input:nth-child(3) + label {
+  background: #327DEA;
+}
+
+.n-aikuIT .left-box .kensaku .cp_tab .cp_tabpanel{
+  border-radius: 0px 0px 7px 7px;
+  padding: 0em;
+}
+.n-aikuIT .left-box .kensaku .cp_tab .cp_tabpanels{
+  min-height: 700px;
+}
+.n-aikuIT .left-box .kensaku .cp_tab img{
+  height: 14.5px;
+}
+.n-aikuIT .left-box .kensaku .cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child, .n-aikuIT .left-box .kensaku .cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2) {
+  background: white;
+  border: solid #bbbbbb;
+  border-width:0px 1px 1px 1px;
+}
+
+.n-aikuIT .left-box .kensaku .cp_tab .cp_tabpanel .form-item{
+  padding: 0.5em 1em;
+}
+.n-aikuIT .left-box .kensaku .cp_tab .cp_tabpanel hr{
+  border: 1px solid #D8D8D8;
+}
+.n-aikuIT .left-box .kensaku .cp_tab .cp_tabpanel .form-item p{
+  font-size: 1em;
+}
+.n-aikuIT .left-box .kensaku .cp_tab .cp_tabpanel .form-item .text{
+  margin: 0;
+  padding: 0;
+  border: 1px solid #bbbbbb;
+  width: 100%;
+  font-size: 0.8em;
+  padding: 10px 15px;
+  border-radius: 2px;
+  color: #444444;
+}
+
+.n-aikuIT .left-box .kensaku .kensaku-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F05A3D;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 7px;
+  margin: 20px auto;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+  transition: 0.3s;
+}
+.n-aikuIT .left-box .kensaku .kensaku-btn:hover{
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0));
+}
+.n-aikuIT .left-box .kensaku .kensaku-btn img{
+  width: 18px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+.n-aikuIT .left-box .kensaku .check{
+  margin: 5px auto;
+}
+.n-aikuIT .left-box .kensaku button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/* ------------------- 右カラム検索結果 ------------------- */
+.n-aikuIT .right-box .kensaku-result .index{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT .right-box .kensaku-result .index h1{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #327DEA;
+}
+.n-aikuIT .right-box .kensaku-result .index p{
+  font-size: 1em;
+}
+.n-aikuIT .right-box .kensaku-result .index span{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #F05A3D;
+}
+
+/* ------------------- フッター ------------------- */
+
+.n-aikuIT footer{
+  background: #327DEA;
+  line-height: 1.3em;
+  color: white;
+  padding: 60px 0;
+}
+.n-aikuIT footer .footer-area{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.n-aikuIT footer .footer-area nav{
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.n-aikuIT footer .footer-area nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT footer .footer-area nav ul li{
+  margin-right:40px;
+  position: relative;
+}
+.n-aikuIT footer .footer-area nav ul li:not(:first-of-type)::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  content: '';
+}
+.n-aikuIT footer .footer-area nav ul li a{
+  color: white;
+  font-size: 15px;
+}
+.n-aikuIT footer .footer-area nav ul li a:hover{
+  text-decoration: underline;
+}
+.n-aikuIT footer .footer-area .copy{
+  font-size: 13px;
+  text-align: right;
+}

@@ -1,0 +1,204 @@
+.n-aikuIT .main-box_contact h1{
+  margin: 140px 0 40px 0;
+  font-weight: bold;
+  font-size:30px;
+}
+form{
+  text-align: center;
+}
+.n-aikuIT .main-box_contact .contact-box{
+  width: 920px;
+  margin: 0 auto;
+  background-color: white;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  border-radius: 10px;
+  padding: 60px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  text-align: left;
+}
+.n-aikuIT .main-box_contact .contact-form{
+  display:flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  border-bottom:1px solid #eeeeee;
+  text-align: left;
+}
+.n-aikuIT .main-box_contact .contact-form:first-child{
+  border-top:1px solid #eeeeee;
+}
+.n-aikuIT .main-box_contact .komoku-area{
+  background-color: #F1F6FF;
+  width: 280px;
+  padding: 30px 0 30px 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.n-aikuIT .main-box_contact .komoku-area2{
+  background-color: #F1F6FF;
+  width: 280px;
+  padding: 70px 0 70px 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.n-aikuIT .main-box_contact .required{
+  font-size: 14px;
+  background-color:#327DEA;
+  color: white;
+  padding: 2px 10px;
+  margin-right: 20px;
+  height: 25px;
+  width: 30px;
+}
+.n-aikuIT .main-box_contact input.text,.n-aikuIT .main-box_contact select{
+  width: 565px;
+  height: 40px;
+  margin-left: 20px;
+  color: #343434;
+  padding: 0 10px;
+}
+.n-aikuIT .main-box_contact textarea{
+  width: 565px;
+  height: 100px;
+  margin-left: 20px;
+  color: #343434;
+  padding: 10px;
+}
+.n-aikuIT .main-box_contact .label{
+  margin-left: 20px;
+  color: #343434;
+}
+.n-aikuIT .main-box_contact .text{
+  border-radius: 5px;
+  border: 1px solid #D8D8D8;
+}
+.n-aikuIT .main-box_contact select{
+  width: 585px;
+}
+.n-aikuIT .main-box_contact .check-text{
+  font-size: 15px;
+  margin-top: 15px;
+  color: #327DEA;
+}
+.n-aikuIT .main-box_contact .outer{
+  width: 565px;
+  height: 100px;
+  margin-left: 20px;
+  overflow-y: scroll;
+  border: 1px solid #D8D8D8;
+  font-size: 14px;
+  padding: 10px;
+}
+.n-aikuIT .main-box_contact .outer .index{
+  font-weight: bold;
+  color: #327DEA;
+}
+.n-aikuIT .main-box_contact .outer a{
+  color: #327DEA;
+}.n-aikuIT .main-box_contact .outer a:hover{
+  text-decoration: underline;
+}
+.n-aikuIT .main-box_contact .contact-btn{
+  background-color: #327DEA;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  width: 310px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px auto 0 auto;
+  border: none;
+  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+}
+.mb30{
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 1160px){
+  .n-aikuIT .main-box_contact{
+    width: 96%;
+    margin: 0 auto;
+  }
+  .n-aikuIT .main-box_contact .contact-box{
+    width: 90%;
+    padding: 5%;
+  }
+  .n-aikuIT .main-box_contact .contact-box .input{
+    width: 60%;
+  }
+  .n-aikuIT .main-box_contact .komoku-area{
+    width: 30%;
+    padding: 30px 0 30px 30px;
+  }
+  .n-aikuIT .main-box_contact .komoku-area2{
+    width: 30%;
+  }
+  .n-aikuIT .main-box_contact .komoku{
+    width: 60%;
+  }
+  .n-aikuIT .main-box_contact input.text,.n-aikuIT .main-box_contact select{
+    width: 98%;
+    height: 40px;
+    margin-left: 20px;
+    padding: 0 2%;
+  }
+  .n-aikuIT .main-box_contact textarea{
+    width: 98%;
+    height: 100px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .n-aikuIT .main-box_contact select{
+    width: 103%;
+  }
+  .n-aikuIT .main-box_contact .outer{
+    width: 98%;
+  }
+}
+
+@media (max-width: 760px){
+  .n-aikuIT .main-box_contact .contact-form{
+    display:block;
+  }
+  .n-aikuIT .main-box_contact .komoku-area,.n-aikuIT .main-box_contact .komoku-area2{
+    width: 98%;
+    padding: 10px 0 10px 3%;
+    border-top:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
+    margin-bottom: 20px;
+  }
+  .n-aikuIT .main-box_contact .contact-box .input{
+    width: 93%;
+    margin:0 auto 20px auto;
+  }
+  .n-aikuIT .main-box_contact input.text,.n-aikuIT .main-box_contact select,.n-aikuIT .main-box_contact textarea,.n-aikuIT .main-box_contact .outer{
+    margin-left: 0;
+  }
+  .n-aikuIT .main-box_contact .contact-form{
+    border-bottom:none;
+  }
+  .n-aikuIT .main-box_contact .contact-form:first-child{
+    border-top:none;
+  }
+}
+@media (max-width: 560px){
+  .n-aikuIT .main-box_contact h1{
+    margin: 100px 0 30px 0;
+    font-size: 26px;
+  }
+  .n-aikuIT .main-box_contact .mb30{
+    font-size: 16px;
+  }
+  .n-aikuIT .main-box_contact .komoku{
+    font-size: 17px;
+  }
+  .n-aikuIT .main-box_contact .contact-box{
+    padding-bottom: 10%;
+    margin-bottom: 30px;
+  }
+}

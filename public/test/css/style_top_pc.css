@@ -1,0 +1,510 @@
+
+/* ------------------- トップイメージ------------------- */
+.n-aikuIT #top{
+  background: white;
+  margin-top: 80px;
+}
+.n-aikuIT #top .top-img{
+  background-image: url("../images/pc/top/main-img.png");
+  background-repeat: no-repeat;
+  width: 1451px;
+  height: 654px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.n-aikuIT #top .top-img .top-img-left, .n-aikuIT #top .top-img .top-img-right{
+  position: relative;
+  width: 50%;
+}
+.n-aikuIT #top .top-img .top-img-left >div{
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  width: 100%;
+}
+
+.n-aikuIT #top .top-img .top-img-right .area-owari{
+  position: absolute;
+  top: 85px;
+  left: 0px;
+}
+.n-aikuIT #top .top-img .top-img-right .area-nagoya{
+  position: absolute;
+  top: 200px;
+  left: 40px;
+}
+.n-aikuIT #top .top-img .top-img-right .area-nishimikawa{
+  position: absolute;
+  top: 280px;
+  left: 190px;
+}
+.n-aikuIT #top .top-img .top-img-right .area-higashimikawa{
+  position: absolute;
+  top: 310px;
+  left: 440px;
+}
+.n-aikuIT #top .top-img .top-img-right .area-chita{
+  position: absolute;
+  top: 350px;
+  left: 20px;
+}
+
+
+.n-aikuIT #top .toroku-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F05A3D;
+  font-weight: bold;
+  color: white;
+  width: 300px;
+  padding: 10px 0;
+  border-radius: 7px;
+  margin: 40px auto;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+  transition: 0.3s;
+}
+.n-aikuIT #top .toroku-btn:hover{
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0));
+}
+.n-aikuIT #top .toroku-btn img{
+  width: 18px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+
+
+
+/* -------------------検索------------------- */
+
+
+
+.n-aikuIT #kensaku .form-area{
+  width:1135px;
+  margin: 20px auto;
+}
+.n-aikuIT #kensaku table{
+  width: 100%;
+  background: white;
+}
+.n-aikuIT #kensaku table tr{
+  border: 1px solid #D8D8D8;
+}
+
+.n-aikuIT #kensaku table th{
+  width: 133px;
+  background: #F1F6FF;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #343434;
+  padding: 32px 20px;
+}
+.n-aikuIT #kensaku table td{
+  width: 434.5px;
+}
+
+
+.n-aikuIT #kensaku .check{
+  width: 100%;
+  margin-left: 22px;
+}
+
+
+
+.n-aikuIT #kensaku .checkbox-input{
+  display: none;
+}
+.n-aikuIT #kensaku .checkbox-parts{
+  padding-left: 30px;
+  position:relative;
+  margin-right: 20px;
+}
+.n-aikuIT #kensaku .checkbox-parts::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+.n-aikuIT #kensaku .checkbox-input:checked + .checkbox-parts{
+  color: #327DEA;
+}
+.n-aikuIT #kensaku .checkbox-input:checked + .checkbox-parts::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 10px;
+  height: 21px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #327DEA;
+  border-right: 3px solid #327DEA;
+}
+
+.n-aikuIT #kensaku .free-text{
+  margin: 0;
+  padding: 0;
+  border: 1px solid #bbbbbb;
+  width: 957px;
+  font-size: 0.8em;
+  margin-left: 22px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #444444;
+}
+
+
+.n-aikuIT #kensaku .kensaku-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F05A3D;
+  font-weight: bold;
+  color: white;
+  width: 300px;
+  padding: 10px 0;
+  border-radius: 7px;
+  margin: 20px auto;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+  transition: 0.3s;
+}
+.n-aikuIT #kensaku .kensaku-btn:hover{
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0));
+}
+.n-aikuIT #kensaku .kensaku-btn img{
+  width: 18px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+
+
+
+
+
+
+
+
+/* ------------------- おすすめ企業 ------------------- */
+
+*{
+  box-sizing: border-box;
+}
+.slider {
+  width: 100%;
+  margin: 100px auto;
+}
+.slick-slide {
+  margin: 0px 5px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev:before,.slick-next:before {
+  color: black;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+
+
+
+
+.n-aikuIT #osusume{
+  padding: 30px 35px;
+/*  background-color: #FDFFE2;  */
+  background-color: white;
+  text-align: left;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+.n-aikuIT #osusume .osusume-area a{
+  width: 216px;
+}
+.n-aikuIT #osusume .osusume-area a img{
+  width: 100%;
+}
+.n-aikuIT #osusume h1{
+  font-weight: bold;
+  font-size: 25px;
+  color: #327DEA;
+  margin:0 auto 15px auto;
+  text-align: center;
+  padding: 0px;
+  background: url("../images/pc/top/flag-blue.png") no-repeat left center;
+  width: 200px;
+}
+.n-aikuIT #osusume h2{
+  font-weight: bold;
+  font-size: 15px;
+  color: #343434;
+}.n-aikuIT #osusume p{
+  font-size: 14px;
+  margin: 3px 0px;
+}
+.n-aikuIT #osusume .osusume-box{
+  transition: 0.3s;
+}
+.n-aikuIT #osusume .osusume-box:hover{
+  background-color: #E4F4F9;
+}
+.n-aikuIT #osusume .osusume-box .syokusyu{
+  color: #327DEA;
+  font-size: 12px;
+  font-weight: 600;
+}
+.n-aikuIT #osusume .osusume-area{
+  display: flex;
+  justify-content: space-between;
+}
+.n-aikuIT #osusume .osusume-box img{
+  margin-bottom: 10px;
+}
+
+
+
+.n-aikuIT .tag{
+  display: flex;
+  font-weight: 600;
+  font-size: 11px;
+  color: white;
+}
+.n-aikuIT .tag .tag-blue{
+  background-color: #1EBDD3;
+  padding: 5px;
+  margin-right: 5px;
+}
+.n-aikuIT .tag .tag-red{
+  background-color: #F05A3D;
+  padding: 5px;
+  margin-right: 5px;
+}
+.n-aikuIT .tag .tag-purple{
+  background-color: #976CCF;
+  padding: 5px;
+  margin-right: 5px;
+}
+.n-aikuIT .tag .tag-green{
+  background-color: #8AD242;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+
+/* ------------------- 求人検索 ------------------- */
+
+.n-aikuIT #kensaku h1{
+  font-size: 23px;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 0 0 30px;
+  background: url("../images/pc/top/kensaku-gray.png") no-repeat left center;
+}
+.n-aikuIT #kensaku {
+  height: 550px;
+}
+
+/* ------------------- 新着企業 ------------------- */
+
+.n-aikuIT #kigyo-new h1{
+  font-size: 23px;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 0 0 30px;
+  margin-bottom: 20px;
+  background: url("../images/pc/top/building-gray.png") no-repeat left center;
+}
+.n-aikuIT #kigyo-new .kigyo-new-area{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size:14px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 80px;
+}
+.n-aikuIT #kigyo-new .kigyo-new-area img{
+  margin-bottom: 10px;
+}
+
+.n-aikuIT #kigyo-new .kigyo-new-box{
+  display: flex;
+  width: 388px;
+  height: 130px;
+  background-color: white;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.n-aikuIT #kigyo-new .kigyo-new-box:hover{
+  background-color: #E4F4F9;
+}
+.n-aikuIT #kigyo-new .kigyo-new-box img{
+  width: 173px;
+  margin: 0;
+}
+.n-aikuIT #kigyo-new .kigyo-new-box .text{
+  padding: 20px 10px;
+}
+
+.n-aikuIT #kigyo-new .kigyo-new-box .text h2{
+  font-weight: bold;
+  font-size: 15px;
+  color: #343434;
+}
+.n-aikuIT #kigyo-new .kigyo-new-box .text p{
+  font-size: 14px;
+  font-weight:400;
+  margin: 3px 0px;
+}
+.n-aikuIT #kigyo-new .kigyo-new-box .text .syokusyu{
+  color: #327DEA;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ------------------- 新着求人 ------------------- */
+
+.n-aikuIT #kyujin-new h1{
+  font-size: 23px;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 0 0 35px;
+  margin-bottom: 20px;
+  background: url("../images/pc/top/okan-gray.png") no-repeat left center;
+}
+.n-aikuIT #kyujin-new .kyujin-new-area{
+  display: flex;
+  justify-content: space-between;
+  font-size:14px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 80px;
+}
+.n-aikuIT #kyujin-new .kyujin-new-box{
+  background-color: white;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  transition: 0.3s;
+}
+.n-aikuIT #kyujin-new .kyujin-new-box:hover{
+  background-color: #E4F4F9;
+}
+.n-aikuIT #kyujin-new .kyujin-text{
+  width: 224px;
+  padding: 15px;
+  font-weight: normal;
+  margin-top: -2px;
+}
+.n-aikuIT #kyujin-new .kyujin-text h2{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 8px 0px;
+}
+.n-aikuIT #kyujin-new .kyujin-text p{
+  font-size:13px;
+  line-height: 1.3em;
+}
+
+
+.n-aikuIT #kyujin-new .kyujin-text .status{
+  margin-top: 5px;
+  color: #327DEA;
+}
+.n-aikuIT #kyujin-new .kyujin-text .status .area{
+  background: url("../images/pc/top/area-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 5px 0;
+}
+.n-aikuIT #kyujin-new .kyujin-text .status .syokusyu{
+  background: url("../images/pc/top/bag-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 5px 0;
+}
+.n-aikuIT #kyujin-new .kyujin-text .status .salary{
+  background: url("../images/pc/top/money-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 5px 0;
+}
+
+
+/* ------------------- コラム ------------------- */
+
+.n-aikuIT #column h1{
+  font-size: 23px;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 0 0 35px;
+  margin-bottom: 20px;
+  background: url("../images/pc/top/book-gray.png") no-repeat left center;
+}
+.n-aikuIT #column .column-area{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size:14px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 80px;
+}
+.n-aikuIT #column .column-box{
+  display: flex;
+  margin: 10px 0px;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  background-color: white;
+  transition: 0.3s;
+}
+.n-aikuIT #column .column-box:hover{
+  background-color: #E4F4F9;
+}
+.n-aikuIT #column .column-text{
+  width: 340px;
+  height: 106px;
+  padding: 15px;
+  font-weight: normal;
+}
+.n-aikuIT #column .column-text h2{
+  font-weight: 600;
+  color: #327DEA;
+  font-size: 15px;
+  line-height: 1.6em;
+  margin-bottom: 5px;
+}
+.n-aikuIT #column .column-text p{
+  font-size:14px;
+  line-height: 1.7em;
+}
+.n-aikuIT #column  .day{
+  height:30px;
+  color: white;
+  background-color: #327DEA;
+  width: 340px;
+  padding: 2px 15px;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+

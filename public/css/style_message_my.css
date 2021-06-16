@@ -1,0 +1,153 @@
+/* ------------------- メッセージ------------------- */
+
+.n-aikuIT .right-box .message-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* ------------------- メッセージ左側------------------- */
+.n-aikuIT .right-box .message-area .message-left{
+  width: 30%;
+  border: 1px solid #D8D8D8;
+}
+@media (max-width: 830px){
+  .n-aikuIT .right-box .message-area .message-left{
+  display: none;
+  }
+}
+.n-aikuIT .right-box .message-area .message-left .message-company{
+  border-bottom:1px solid #D8D8D8;
+  padding: 15px;
+}
+.n-aikuIT .right-box .message-area .message-left .message-company:last-child{
+  border-bottom:none;
+}
+.n-aikuIT .right-box .message-area .message-left .company-name{
+  font-weight: bold;
+  color: #327DEA;
+}
+.n-aikuIT .right-box .message-area .message-left .day{
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.n-aikuIT .right-box .message-area .message-left .kyujin{
+  font-size: 13px;
+  background-color: #F1F6FF;
+  padding: 10px;
+}
+.n-aikuIT .right-box .message-area .message-left .kyujin a{
+  color: #327DEA;
+  text-decoration: underline;
+}
+.n-aikuIT .right-box .message-area .message-left .kyujin a:hover{
+  text-decoration: none;
+}
+
+
+/* ------------------- メッセージ右側------------------- */
+.n-aikuIT .right-box .message-area .message-right{
+  width: 66%;
+}
+.n-aikuIT .tag .tag-new {
+  background-color: #FF0000;
+  padding: 5px;
+  margin-right: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+@media (max-width: 830px){
+  .n-aikuIT .right-box .message-area .message-right{
+    width: 100%;
+  }
+}
+.n-aikuIT .right-box .message-area .message-right .message-box{
+  width: 100%;
+  border: 1px solid #D8D8D8;
+  padding: 5%;
+  margin-bottom: 20px;
+}
+.n-aikuIT .right-box .message-area .message-right h2{
+  font-weight: bold;
+  padding-left: 10px;
+  border-left: 5px solid #343434;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.n-aikuIT .right-box .message-area .message-right .kyujin-area{
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.n-aikuIT .right-box .message-area .message-right .kyujin-area .kyujin-area-title{
+  width: 25%;
+  padding: 3%;
+  background-color: #327DEA;
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.n-aikuIT .right-box .message-area .message-right .kyujin-area .kyujin-area-con{
+  width: 75%;
+  padding: 3%;
+  background-color: #F1F6FF;
+  font-weight: bold;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+.n-aikuIT .right-box .message-area .message-right .kyujin-area .kyujin-area-con a{
+  color: #327DEA;
+  text-decoration: underline;
+}
+.n-aikuIT .right-box .message-area .message-right .kyujin-area .kyujin-area-con a:hover{
+  text-align: none;
+}
+.n-aikuIT .right-box .message-area .message-right .bggreen{
+  background-color: #1EBDD3;
+}
+.n-aikuIT .right-box .message-area .message-right .bgblue{
+  background-color: #327DEA;
+}
+.n-aikuIT .right-box .message-area .message-right .message-title{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+}
+.n-aikuIT .right-box .message-area .message-right .message-title .title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+.n-aikuIT .right-box .message-area .message-right .message-title .day{
+  font-size: 13px;
+  line-height: 1;
+}
+.n-aikuIT .right-box .message-area .message-right .message-title .tag .tag-new{
+  margin-bottom: 10px;
+}
+.n-aikuIT .right-box .message-area .message-right .btn-area{
+  float: right;
+}
+.n-aikuIT .right-box .message-area .message-right .message-btn{
+  width: 220px;
+  font-weight: bold;
+  color: white;
+  background-color: #F05A3D;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.n-aikuIT .right-box .message-area .message-right a:hover .message-btn{
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0));
+  }

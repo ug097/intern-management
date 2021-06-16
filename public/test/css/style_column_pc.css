@@ -1,0 +1,94 @@
+.n-aikuIT .main-box_column{
+  width: 1200px;
+  margin: 0 auto;
+}
+.n-aikuIT .main-box_column .column_title{
+  margin: 140px auto 0 auto;
+}
+.n-aikuIT .main-box_column h1{
+  margin: 20px 0 40px 0;
+  font-weight: bold;
+  font-size:30px;
+}
+
+
+.n-aikuIT .main-box_column .column_area{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.n-aikuIT .main-box_column .column_box{
+  width: 32%;
+  text-align: left;
+  background-color: white;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  margin-bottom: 2%;
+}
+.n-aikuIT .main-box_column .column_box:hover{
+  background-color: #E4F4F9;
+}
+.n-aikuIT .main-box_column .column_box .day{
+  background-color: #327DEA;
+  color: white;
+  padding: 3px 0 3px 20px;
+  font-size: 18px;
+}
+.n-aikuIT .main-box_column .column_box .text_box{
+  padding:20px;
+}
+.n-aikuIT .main-box_column .column_box img{
+  width: 100%;
+}
+.n-aikuIT .main-box_column .column_box .text_box p{
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.n-aikuIT .main-box_column .column_box .text_box h2{
+  color: #327DEA;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.n-aikuIT .main-box_column .column_box .text_box .btn{
+  font-weight: bold;
+  text-align: center;
+  background-color: #327DEA;
+  color: white;
+  padding: 3px 0;
+  border-radius: 20px;
+  width: 170px;
+  margin: 0 auto 5px auto;
+}
+
+/* ------------------- ページネーション ------------------- */
+
+.n-aikuIT .main-box_column .pagenation{
+  width: 100%;
+  margin: 30px 0px 60px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+.n-aikuIT .main-box_column .pagenation .pages{
+  display: flex;
+}
+
+.n-aikuIT .main-box_column .pagenation .pages a{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0px 6px;
+}
+.n-aikuIT .main-box_column .pagenation .pages .arrow{
+  background: #327DEA;
+}
+.n-aikuIT .main-box_column .pagenation .pages .disabled{
+  background: #D8D8D8;
+}
+.n-aikuIT .main-box_column .pagenation .pages .page-select{
+  background: white;
+  border: solid #D8D8D8 1px;
+}
+

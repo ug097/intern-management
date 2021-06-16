@@ -1,0 +1,409 @@
+.n-aikuIT .right-box .kigyo-detail{
+  width: 100%;
+  text-align: left;
+}
+
+.n-aikuIT .right-box .kigyo-detail .top{
+  background-image: url("../images/pc/kensaku_list/kigyo_main.png");
+  background-repeat: no-repeat;
+  height: 450px;
+  display: flex;
+  position: relative;
+}
+.n-aikuIT .right-box .kigyo-detail .top .left{
+  position: absolute;
+  top: 320px;
+  left: 30px;
+  color: white;
+}
+.n-aikuIT .right-box .kigyo-detail .top .right{
+  position: absolute;
+  top: 320px;
+  right: 30px;
+  text-align: right;
+}
+.n-aikuIT .right-box .kigyo-detail .top .left .name{
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+.n-aikuIT .right-box .kigyo-detail .top .left .url{
+  color: white;
+}
+
+.n-aikuIT .right-box .kigyo-detail .top .right .kininaru-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #327DEA;
+  font-weight: bold;
+  width: 170px;
+  padding: 5px 0;
+  margin-top: 50px;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: #327DEA;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+  transition: 0.3s;
+  text-align: right;
+}
+
+
+/* ------------------- 企業詳細タブ ------------------- */
+
+.kigyo_tab *, .kigyo_tab *:before, .kigyo_tab *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.kigyo_tab {
+  margin: 1em auto;
+  text-align: left;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+}
+.kigyo_tab > input[type='radio'] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.kigyo_tab .kigyo_tabpanels {
+  position: relative;
+  height: 2900px;/* エリアの高さ */
+}
+.kigyo_tab .kigyo_tabpanel {
+  position: absolute;
+  width: 100%;
+  display: none;
+  padding: 0.5em 1em;
+  transform: translateY(-10px);
+  -webkit-transition: 0s;
+  transition: opacity 0s;
+  border-radius: 0px 0px 8px 8px;
+}
+.kigyo_tab > input:first-child:checked ~ .kigyo_tabpanels > .kigyo_tabpanel:first-child,
+.kigyo_tab > input:nth-child(3):checked ~ .kigyo_tabpanels > .kigyo_tabpanel:nth-child(2),
+.kigyo_tab > input:nth-child(5):checked ~ .kigyo_tabpanels > .kigyo_tabpanel:nth-child(3),
+.kigyo_tab > input:nth-child(7):checked ~ .kigyo_tabpanels > .kigyo_tabpanel:nth-child(4),
+.kigyo_tab > input:nth-child(9):checked ~ .kigyo_tabpanels > .kigyo_tabpanel:nth-child(5),
+.kigyo_tab > input:nth-child(11):checked ~ .kigyo_tabpanels > .kigyo_tabpanel:nth-child(6) {
+  display: block;
+  transform: translateY(0px);
+}
+.kigyo_tab > input:first-child:checked ~ .kigyo_tabpanels > .kigyo_tabpanel:first-child {
+  background: white;
+}
+.kigyo_tab > input:nth-child(3):checked ~ .kigyo_tabpanels > .kigyo_tabpanel:nth-child(2) {
+  background: white;
+}
+.kigyo_tab > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+  font-size:1.2em;
+  color: white;
+  width: 440px;
+  text-align: center;
+}
+.kigyo_tab > input:first-child + label {
+  background: white;
+  color: #327DEA;
+  margin-right: 15.4px;
+}
+.kigyo_tab > input:nth-child(3) + label {
+  background: #327DEA;
+}
+
+.kigyo_tab > label:hover {
+}
+.kigyo_tab > input:focus + label {
+  color: #ffffff;
+}
+.kigyo_tab > input:checked + label {
+  margin-bottom: -1px;
+}
+
+.kigyo_ipselect {
+  overflow: hidden;
+  width: 390px;
+  margin: 0 auto;
+  text-align: center;
+}
+.kigyo_ipselect select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.kigyo_ipselect select::-ms-expand {
+  display: none;
+}
+.kigyo_ipselect.cp_sl {
+  position: relative;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  background: #ffffff;
+}
+.kigyo_ipselect.kigyo_sl::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #888;
+  pointer-events: none;
+}
+.kigyo_ipselect.kigyo_sl select {
+  padding: 8px 38px 8px 8px;
+  color: #666666;
+}
+
+
+
+
+/* ------------------- 企業詳細タブ内部 ------------------- */
+
+.kigyo_tab .tab_content{
+  margin: 50px;
+}
+.kigyo_tab .tab_content h2{
+  color: #327DEA;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.kigyo_tab .tab_content p{
+  font-size: 1em;
+  line-height:1.4em;
+}
+.kigyo_tab .tab_content table{
+  line-height:2em;
+  font-size: 1.1em;
+}
+.kigyo_tab .tab_content table th{
+  padding-right: 40px;
+}
+
+
+.kigyo_tab .tab_content .kininaru-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #327DEA;
+  color: white;
+  font-weight: bold;
+  width: 225px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #327DEA;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+  transition: 0.3s;
+  text-align: right;
+}
+.kigyo_tab .tab_content .kininaru-btn img{
+  margin-right:0.7em;
+}
+
+
+
+.kigyo_tab .tab_content .info{
+  display: flex;
+  justify-content: space-between;
+}
+.kigyo_tab .tab_content .title{
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #327DEA;
+  margin: 20px auto;
+}
+
+.kigyo_tab .tab_content .status{
+  display: flex;
+}
+.kigyo_tab .tab_content .status .area {
+  background: url("../images/pc/top/area-blue.png") no-repeat left;
+  padding: 0 0 0 15px;
+  margin: 0;
+  margin-right: 20px;
+  color: #327DEA;
+}
+.kigyo_tab .tab_content .status .syokusyu {
+  background: url("../images/pc/top/bag-blue.png") no-repeat left;
+  padding: 0 0 0 15px;
+  margin: 0;
+  margin-right: 20px;
+  color: #327DEA;
+}
+.kigyo_tab .tab_content .status .salary {
+  background: url("../images/pc/top/money-blue.png") no-repeat left;
+  padding: 0 0 0 15px;
+  margin: 0;
+  margin-right: 20px;
+  color: #327DEA;
+}
+
+.kigyo_tab .tab_content .btn-area{
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.kigyo_tab .tab_content .oubo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F05A3D;
+  color: white;
+  font-weight: bold;
+  width: 225px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid;
+  border-top-color: currentcolor;
+  border-right-color: currentcolor;
+  border-bottom-color: currentcolor;
+  border-left-color: currentcolor;
+  border-color: #F05A3D;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+  transition: 0.3s;
+  text-align: right;
+}
+.kigyo_tab .tab_content .oubo-btn img {
+  margin-right: 0.7em;
+}
+
+
+
+
+
+.kigyo_tab .kyujin-list{
+  width: 100%;
+  margin: 15px 0px;
+}
+.kigyo_tab .kyujin-list .kyujin{
+  background: white;
+  margin-bottom: 2em;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary{
+  display: flex;
+  text-align: left;
+  padding: 30px;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary img{
+  height: 285px;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text{
+  width: 453px;
+  padding-left: 20px;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text .info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text .title{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #327DEA;
+  line-height: 1.5em;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text .title:hover{
+  text-decoration: underline;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text .text{
+  font-size: 0.9em;
+  margin: 10px 0px;
+  line-height: 1.5em;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text h2{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #327DEA;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text h2 a{
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #327DEA;
+  text-decoration: underline;
+  margin-left: 1em;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .kyujin-text .status{
+  margin-top: 5px;
+  color: #327DEA;
+  font-size: 0.9em;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .status .area{
+  background: url("../images/pc/top/area-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .status .syokusyu{
+  background: url("../images/pc/top/bag-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.kigyo_tab .kyujin-list .kyujin .kyujin-summary .status .salary{
+  background: url("../images/pc/top/money-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+
+.kigyo_tab .kyujin-list .kyujin .kyujin-button{
+  background: #E4ECFB;
+  text-align: center;
+}
+.kigyo_tab .kyujin-list .kyujin .button{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.kigyo_tab .kyujin-list .kyujin .button a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #327DEA;
+  font-weight: bold;
+  color: white;
+  width: 200px;
+  margin: 0 1em;
+  padding: 5px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.kigyo_tab .kyujin-list .kyujin .button p{
+  font-size: 0.9em;
+}
+.kigyo_tab .kyujin-list .kyujin .button .kininaru-btn{
+  background: white;
+  color: #327DEA;
+  border: solid #327DEA 1px;
+}

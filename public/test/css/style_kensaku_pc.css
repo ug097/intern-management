@@ -1,0 +1,221 @@
+.n-aikuIT .right-box .kensaku-result .kigyo-list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0px;
+}
+
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo{
+  width: 288px;
+  background: white;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+  margin: 10px 0px;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo-summary{
+  padding: 18px;
+  text-align: left;
+  transition: 0.3s;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo-summary:hover{
+  background: #E4F4F9;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo-summary .company{
+  font-size: 1em;
+  font-weight: 600;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo-summary .text{
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo-summary .area{
+  font-size: 0.8em;
+  line-height: 2.3em;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo-summary .gyosyu{
+  color: #327DEA;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .kigyo-summary .tag{
+  margin-top: 0.8em;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .button{
+  background: #E4ECFB;
+  padding: 14px 18px;
+  display: flex;
+  justify-content:space-between;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .button a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #327DEA;
+  font-weight: bold;
+  color: white;
+  width: 120px;
+  padding: 5px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .button p{
+  font-size: 0.9em;
+}
+.n-aikuIT .right-box .kensaku-result .kigyo-list .button .kininaru-btn{
+  background: white;
+  color: #327DEA;
+  border: solid #327DEA 1px;
+}
+
+
+
+
+/* ------------------- 求人検索一覧 ------------------- */
+
+.n-aikuIT .tag .tag-new {
+  background-color: #FF0000;
+  padding: 5px;
+  margin-right: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.n-aikuIT .right-box .kensaku-result .kyujin-list{
+  width: 100%;
+  margin: 15px 0px;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin{
+  background: white;
+  margin-bottom: 2em;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary{
+  display: flex;
+  text-align: left;
+  padding: 30px;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary img{
+  height: 285px;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text{
+  width: 453px;
+  padding-left: 20px;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text .info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text .title{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #327DEA;
+  line-height: 1.5em;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text .title:hover{
+  text-decoration: underline;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text .text{
+  font-size: 0.9em;
+  margin: 10px 0px;
+  line-height: 1.5em;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text h2{
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #327DEA;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text h2 a{
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #327DEA;
+  text-decoration: underline;
+  margin-left: 1em;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .kyujin-text .status{
+  margin-top: 5px;
+  color: #327DEA;
+  font-size: 0.9em;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .status .area{
+  background: url("../images/pc/top/area-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .status .syokusyu{
+  background: url("../images/pc/top/bag-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-summary .status .salary{
+  background: url("../images/pc/top/money-blue.png") no-repeat left;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .kyujin-button{
+  background: #E4ECFB;
+  text-align: center;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .button{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .button a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #327DEA;
+  font-weight: bold;
+  color: white;
+  width: 200px;
+  margin: 0 1em;
+  padding: 5px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .button p{
+  font-size: 0.9em;
+}
+.n-aikuIT .right-box .kensaku-result .kyujin-list .kyujin .button .kininaru-btn{
+  background: white;
+  color: #327DEA;
+  border: solid #327DEA 1px;
+}
+
+/* ------------------- ページネーション ------------------- */
+
+.n-aikuIT .right-box .kensaku-result .pagenation{
+  width: 100%;
+  margin: 30px 0px 60px 0px;
+  display: flex;
+}
+.n-aikuIT .right-box .kensaku-result .pagenation .pages{
+  display: flex;
+}
+
+.n-aikuIT .right-box .kensaku-result .pagenation .pages a{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0px 6px;
+}
+.n-aikuIT .right-box .kensaku-result .pagenation .pages .arrow{
+  background: #327DEA;
+}
+.n-aikuIT .right-box .kensaku-result .pagenation .pages .disabled{
+  background: #D8D8D8;
+}
+.n-aikuIT .right-box .kensaku-result .pagenation .pages .page-select{
+  background: white;
+  border: solid #D8D8D8 1px;
+}
+

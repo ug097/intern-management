@@ -1,0 +1,8 @@
+.fixed_btn
+{
+  position: fixed;
+  top: 250px; 
+  right: 40px;
+  padding: 6px 40px;
+  z-index:2000;
+}
