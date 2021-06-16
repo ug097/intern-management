@@ -10,6 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// asset()やurl()をhttpsで生成
+if(config('app.env') === 'production'){
+    URL::forceScheme('https');
+}
+
 Route::get('/login', 'LoginController@index');
 Route::post('/login', 'LoginController@login');
 Route::get('/logout', 'LoginController@logout');
@@ -22,7 +28,7 @@ Route::post('/user/regist', 'UserController@userRegist');
 Route::group(['middleware' => ['userlogin']], function() {
 
     Route::get('/', 'UserController@index');
-    
+
     // 学生管理
     Route::get('/user', 'UserController@index');
     Route::get('/user/detail_user/{id}', 'UserController@detailUserData');
@@ -35,7 +41,7 @@ Route::group(['middleware' => ['userlogin']], function() {
     Route::post('/offer/offer_status_edit', 'InternOfferController@offerStatusEdit');
     Route::get('/offer/regist_form', 'InternOfferController@offerRegistForm');
     Route::post('/offer/regist', 'InternOfferController@offerRegist');
-    
+
     // PDF関連
     Route::get('/pdf/user/{id}', 'PdfController@userPdf');
     Route::get('/pdf/offer/{id}', 'PdfController@offerPdf');
