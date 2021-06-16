@@ -130,7 +130,7 @@ class CreateUniversitiesTable extends Migration
             ["id" => 103, "name" => "ユマニテク短期大学", "order" => 103, ],
         ]);
         \DB::table('universities')->insert([
-            ["id" => 999, "name" => "その他", "order" => 999, ],
+            ["id" => 9999, "name" => "その他", "order" => 999, ],
         ]);
     }
 

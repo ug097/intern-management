@@ -95,7 +95,7 @@ class CreateGradSchoolsTable extends Migration
             ["id" => 68, "name" => "光産業創成大学大学院", "order" => 68, ],
         ]);
         \DB::table('grad_schools')->insert([
-            ["id" => 99, "name" => "その他", "order" => 99, ],
+            ["id" => 999, "name" => "その他", "order" => 99, ],
         ]);
     }
 
