@@ -37,9 +37,7 @@ class CreateOccupationLgsTable extends Migration
             ["id" => 11, "name" => "技術・開発・研究職", "order" => 11, ],
             ["id" => 12, "name" => "エンジニア", "order" => 12, ],
             ["id" => 13, "name" => "クリエイター・クリエイティブ職", "order" => 13, ],
-        ]);
-        \DB::table('occupation_lgs')->insert([
-            ["id" => 999, "name" => "その他", "order" => 99, ],
+            ["id" => 99, "name" => "その他", "order" => 99, ],
         ]);
     }
 

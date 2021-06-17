@@ -53,9 +53,7 @@ class CreateUndergraduatesTable extends Migration
             ["id" => 26, "name" => "体育学部", "order" => 26, ],
             ["id" => 27, "name" => "音楽学部", "order" => 27, ],
             ["id" => 28, "name" => "観光学部", "order" => 28, ],
-        ]);
-        \DB::table('undergraduates')->insert([
-            ["id" => 999, "name" => "その他", "order" => 99, ],
+            ["id" => 99, "name" => "その他", "order" => 99, ],
         ]);
     }
 

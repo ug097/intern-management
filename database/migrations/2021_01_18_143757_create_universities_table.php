@@ -128,9 +128,7 @@ class CreateUniversitiesTable extends Migration
             ["id" => 101, "name" => "鈴鹿大学短期大学部", "order" => 101, ],
             ["id" => 102, "name" => "高田短期大学", "order" => 102, ],
             ["id" => 103, "name" => "ユマニテク短期大学", "order" => 103, ],
-        ]);
-        \DB::table('universities')->insert([
-            ["id" => 9999, "name" => "その他", "order" => 999, ],
+            ["id" => 999, "name" => "その他", "order" => 999, ],
         ]);
     }
 
